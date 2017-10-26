@@ -58,7 +58,7 @@ int hashTable::insert (const string &key, void *pv){
 				break;
 			}
 			else if ((A.isDeleted)&&(A.key==key)){
-				A.isDeleted=true;
+				A.isDeleted=false;
 				break;  //break since checking capacity afterwords;
 			}
 		}
